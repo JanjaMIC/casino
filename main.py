@@ -16,14 +16,18 @@ vpis_stevilke = raw_input("Zmagovalna stevilka je: ")
 
 zmagovalna_stevilka = "12345"
 
+
 while vpis_stevilke != zmagovalna_stevilka:
-    print("Zal, ne!  Poizkusite ponovno!")
-    vpis_stevilke = raw_input("Zmagovalna stevilka je: ")
+    if vpis_stevilke > zmagovalna_stevilka:
+        print("Zal je izbrana stevilka Prevelika. Poizkusite ponovno!")
+        vpis_stevilke = raw_input("Zmagovalna stevilka je: ")
+
+    else:
+        print("Zal je izbrana stevilka Prevelika. Poizkusite ponovno!")
+        vpis_stevilke = raw_input("Zmagovalna stevilka je: ")
 
 else:
     print ("Cestitamo. Imate pa res sreco! Uganili ste.Na kartici vas caka 100 eur, ki jih lahko porabite na nasih slotih do konca meseca.")
-
-
 
 
 
